@@ -31,12 +31,9 @@
     "react-dom": "^16.0.0",
     "react-emotion": "^9.1.3",
     "react-hot-loader": "^4.2.0",
-    "react-redux": "^5.0.7",
     "react-scroll": "^1.7.9",
     "react-stick": "^2.2.0",
     "react-sticky": "^6.0.3",
-    "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0",
     "semantic-ui-css": "^2.3.2",
     "semantic-ui-react": "^0.82.0"
   },
@@ -46,6 +43,7 @@
     "build": "parcel build ./src/index.html",
     "watch": "parcel ./src/index.html",
     "lint": "./node_modules/.bin/eslint ./src/ --ext .jsx,.js",
-    "test": "echo 'Not imp yet'"
+    "test": "echo 'Not imp yet'",
+    "precommit": "yarn lint"
   }
 }
