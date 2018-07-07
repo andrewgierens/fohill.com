@@ -1,0 +1,49 @@
+{
+  "name": "fohill.com",
+  "version": "1.0.0",
+  "description": "Website for my dads wood machining website.",
+  "main": "index.js",
+  "repository": "git@github.com:andrewgierens/fohill.com.git",
+  "author": "agierens <apgierens@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "husky": "^0.14.3"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "emotion": "^9.1.3",
+    "express": "^4.9.8",
+    "parcel-bundler": "^1.8.1",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-emotion": "^9.1.3",
+    "react-hot-loader": "^4.2.0",
+    "react-redux": "^5.0.7",
+    "react-scroll": "^1.7.9",
+    "react-stick": "^2.2.0",
+    "react-sticky": "^6.0.3",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-css": "^2.3.2",
+    "semantic-ui-react": "^0.82.0"
+  },
+  "scripts": {
+    "start": "parcel build ./src/index.html && node server.js",
+    "watch": "parcel ./src/index.html",
+    "lint": "./node_modules/.bin/eslint ./src/ --ext .jsx,.js",
+    "test": "echo 'Not imp yet'"
+  }
+}
