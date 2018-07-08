@@ -1,23 +1,17 @@
 import React from 'react';
 import styled from 'react-emotion';
-import { Image } from 'semantic-ui-react';
 
+import Image from '../../../shared/image';
 import Header from '../../../shared/header';
-import cheeseBoard from '../../../images/2018-07-07 19.56.32.jpg';
+import MainContainer from '../../../shared/main-container';
+import cheeseBoard from '../../../images/cheese-board.jpg';
 
 const TextSection = styled('p')`
   color: white;
-  padding: 3rem;
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   font-size: 20px;
-`;
-
-const MainContainer = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #52494c;
 `;
 
 const LeftSection = styled('div')`
@@ -35,26 +29,24 @@ const RightSection = styled('div')`
   text-align: center;
 `;
 
-const ImageWithFit = styled(Image)`
-  object-fit: cover;
-  height: 30rem;
-  width: 30rem;
+const description = `
+  Fool on the Hill is a one man organisation providing affordable and unique items perfect for you and your home.
+  From cheese boards, to iPhone alarm stands, Fool on the Hill can provide quality, custom designs to suit your requests.
+  With unlimmited customisation, you can always get the design you are looking for.
 `;
 
-const lorum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et hendrerit est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sed congue nibh, vitae rhoncus neque. Sed sodales rhoncus ante ut dictum. Aenean a feugiat diam. Integer mollis tincidunt mi. Cras vel tortor mi. Nullam lacinia ornare augue non fringilla. Aenean lobortis non dolor quis luctus.'; // eslint-ignore-line
-
 const DescriptionSection = () => (
-  <MainContainer>
+  <MainContainer colour="#52494c">
     <LeftSection>
       <Header>
         What is Fool on the Hill?
       </Header>
       <TextSection>
-        { lorum }
+        { description }
       </TextSection>
     </LeftSection>
     <RightSection>
-      <ImageWithFit src={cheeseBoard} bordered rounded />
+      <Image src={cheeseBoard} imageText="Cheese Board w/ handle" />
     </RightSection>
   </MainContainer>
 );
