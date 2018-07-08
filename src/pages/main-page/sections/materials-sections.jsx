@@ -3,7 +3,8 @@ import styled from 'react-emotion';
 
 import Image from '../../../shared/image';
 import Header from '../../../shared/header';
-import clock from '../../../images/2018-07-08 17.51.30.jpg';
+import MainContainer from '../../../shared/main-container';
+import clock from '../../../images/iphone-clock.jpg';
 
 const TextSection = styled('p')`
   color: white;
@@ -11,15 +12,6 @@ const TextSection = styled('p')`
   padding-left: 3rem;
   padding-right: 3rem;
   font-size: 20px;
-`;
-
-const MainContainer = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #597f8a;
 `;
 
 const LeftSection = styled('div')`
@@ -46,7 +38,7 @@ const description = `
 `;
 
 const MaterialsSection = () => (
-  <MainContainer>
+  <MainContainer colour="#597f8a">
     <LeftSection>
       <Image
         src={clock}

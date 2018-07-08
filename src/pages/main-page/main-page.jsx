@@ -4,6 +4,7 @@ import { StickyContainer, Sticky } from 'react-sticky';
 
 import DescriptionSection from './sections/description-section';
 import MaterialsSection from './sections/materials-sections';
+import CustomOrderSection from './sections/custom-order-section';
 
 const wholeContainer = css`
   height: 100%;
@@ -35,6 +36,7 @@ const MainPage = () => (
     <div>
       <DescriptionSection />
       <MaterialsSection />
+      <CustomOrderSection />
     </div>
   </StickyContainer>
 );

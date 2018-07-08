@@ -3,7 +3,8 @@ import styled from 'react-emotion';
 
 import Image from '../../../shared/image';
 import Header from '../../../shared/header';
-import cheeseBoard from '../../../images/2018-07-07 19.56.32.jpg';
+import MainContainer from '../../../shared/main-container';
+import cheeseBoard from '../../../images/cheese-board.jpg';
 
 const TextSection = styled('p')`
   color: white;
@@ -11,15 +12,6 @@ const TextSection = styled('p')`
   padding-left: 3rem;
   padding-right: 3rem;
   font-size: 20px;
-`;
-
-const MainContainer = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #52494c;
 `;
 
 const LeftSection = styled('div')`
@@ -44,7 +36,7 @@ const description = `
 `;
 
 const DescriptionSection = () => (
-  <MainContainer>
+  <MainContainer colour="#52494c">
     <LeftSection>
       <Header>
         What is Fool on the Hill?
