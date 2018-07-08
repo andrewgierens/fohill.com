@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'react-emotion';
-
 import Image from '../../../shared/image';
 import Header from '../../../shared/header';
 import MainContainer from '../../../shared/main-container';
@@ -13,7 +12,6 @@ const TextSection = styled('p')`
   padding-right: 3rem;
   font-size: 20px;
 `;
-
 const LeftSection = styled('div')`
   display: flex;
   justify-content: center;
@@ -28,7 +26,6 @@ const RightSection = styled('div')`
   padding: 1rem;
   text-align: center;
 `;
-
 const description = `
   Our products are made from locally grown, locally sourced timber from the Gippsland region.
   Items are crafted, hand polished and shipped directly to you, with love, by one fool on a hill.

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'react-emotion';
-
 import Image from '../../../shared/image';
 import Header from '../../../shared/header';
 import MainContainer from '../../../shared/main-container';
