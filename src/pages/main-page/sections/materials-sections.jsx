@@ -7,7 +7,9 @@ import clock from '../../../images/2018-07-08 17.51.30.jpg';
 
 const TextSection = styled('p')`
   color: white;
-  padding: 3rem;
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   font-size: 20px;
 `;
 
@@ -46,7 +48,12 @@ const description = `
 const MaterialsSection = () => (
   <MainContainer>
     <LeftSection>
-      <Image src={clock} fixToWidth imageText="iPhone alarm clock stand" />
+      <Image
+        src={clock}
+        fixToWidth
+        imageText="iPhone alarm clock stand"
+        imageTextBackground="#597f8a"
+      />
     </LeftSection>
     <RightSection>
       <Header>

@@ -24,7 +24,10 @@ const OverlayText = styled('div')`
   display: flex;
   justify-content: center;
   align-items: center;  
-  background-color: #52494c;
+  background-color: ${props => () => {
+    const { imageTextBackground } = props;
+    return imageTextBackground;
+  }};
   border-radius: 4px;
   width: 70%;
   height: 2.5rem;
@@ -36,10 +39,10 @@ const OverlayText = styled('div')`
 `;
 
 const Image = (props) => {
-  const { imageText } = props;
+  const { imageText, imageTextBackground } = props;
 
   const imageTextElement = (
-    <OverlayText>
+    <OverlayText imageTextBackground={imageTextBackground}>
       { imageText }
     </OverlayText>
   );
@@ -54,10 +57,12 @@ const Image = (props) => {
 
 Image.propTypes = {
   imageText: PropTypes.string,
+  imageTextBackground: PropTypes.string,
 };
 
 Image.defaultProps = {
   imageText: null,
+  imageTextBackground: '#52494c',
 };
 
 export default Image;

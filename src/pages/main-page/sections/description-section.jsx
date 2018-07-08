@@ -7,7 +7,9 @@ import cheeseBoard from '../../../images/2018-07-07 19.56.32.jpg';
 
 const TextSection = styled('p')`
   color: white;
-  padding: 3rem;
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   font-size: 20px;
 `;
 
@@ -35,7 +37,11 @@ const RightSection = styled('div')`
   text-align: center;
 `;
 
-const lorum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et hendrerit est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sed congue nibh, vitae rhoncus neque. Sed sodales rhoncus ante ut dictum. Aenean a feugiat diam. Integer mollis tincidunt mi. Cras vel tortor mi. Nullam lacinia ornare augue non fringilla. Aenean lobortis non dolor quis luctus.'; // eslint-ignore-line
+const description = `
+  Fool on the Hill is a one man organisation providing affordable and unique items perfect for you and your home.
+  From cheese boards, to iPhone alarm stands, Fool on the Hill can provide quality, custom designs to suit your requests.
+  With unlimmited customisation, you can always get the design you are looking for.
+`;
 
 const DescriptionSection = () => (
   <MainContainer>
@@ -44,7 +50,7 @@ const DescriptionSection = () => (
         What is Fool on the Hill?
       </Header>
       <TextSection>
-        { lorum }
+        { description }
       </TextSection>
     </LeftSection>
     <RightSection>
