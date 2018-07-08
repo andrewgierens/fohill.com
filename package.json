@@ -42,7 +42,7 @@
     "start": "yarn build && node server.js",
     "startElastic": "npm install && npm run build && node server.js",
     "build": "parcel build ./src/index.html",
-    "watch": "parcel ./src/index.html",
+    "watch": "parcel ./src/home.html",
     "lint": "./node_modules/.bin/eslint ./src/ --ext .jsx,.js",
     "test": "echo 'Not imp yet'",
     "precommit": "yarn lint"
