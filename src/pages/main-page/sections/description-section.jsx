@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
-import { Image } from 'semantic-ui-react';
 
+import Image from '../../../shared/image';
 import Header from '../../../shared/header';
 import cheeseBoard from '../../../images/2018-07-07 19.56.32.jpg';
 
@@ -35,12 +35,6 @@ const RightSection = styled('div')`
   text-align: center;
 `;
 
-const ImageWithFit = styled(Image)`
-  object-fit: cover;
-  height: 30rem;
-  width: 30rem;
-`;
-
 const lorum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et hendrerit est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sed congue nibh, vitae rhoncus neque. Sed sodales rhoncus ante ut dictum. Aenean a feugiat diam. Integer mollis tincidunt mi. Cras vel tortor mi. Nullam lacinia ornare augue non fringilla. Aenean lobortis non dolor quis luctus.'; // eslint-ignore-line
 
 const DescriptionSection = () => (
@@ -54,7 +48,7 @@ const DescriptionSection = () => (
       </TextSection>
     </LeftSection>
     <RightSection>
-      <ImageWithFit src={cheeseBoard} bordered rounded />
+      <Image src={cheeseBoard} imageText="Cheese Board w/ handle" />
     </RightSection>
   </MainContainer>
 );

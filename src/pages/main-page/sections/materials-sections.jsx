@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'react-emotion';
-import { Image } from 'semantic-ui-react';
 
+import Image from '../../../shared/image';
 import Header from '../../../shared/header';
-import cheeseBoard from '../../../images/2018-07-07 19.56.32.jpg';
+import clock from '../../../images/2018-07-08 17.51.30.jpg';
 
 const TextSection = styled('p')`
   color: white;
@@ -35,25 +35,25 @@ const RightSection = styled('div')`
   text-align: center;
 `;
 
-const ImageWithFit = styled(Image)`
-  object-fit: cover;
-  height: 30rem;
-  width: 30rem;
-`;
+const description = `
+  Our products are made from locally grown, locally sourced timber from the Gippsland region.
+  Items are crafted, hand polished and shipped directly to you, with love, by one fool on a hill.
 
-const lorum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et hendrerit est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sed congue nibh, vitae rhoncus neque. Sed sodales rhoncus ante ut dictum. Aenean a feugiat diam. Integer mollis tincidunt mi. Cras vel tortor mi. Nullam lacinia ornare augue non fringilla. Aenean lobortis non dolor quis luctus.'; // eslint-ignore-line
+  All items are created with locally sources timber but can also be customised to any material of your choice.
+  Pricing changes may apply depending on the chosen material. Use our online quote system to help you out.
+`;
 
 const MaterialsSection = () => (
   <MainContainer>
     <LeftSection>
-      <ImageWithFit src={cheeseBoard} bordered rounded />
+      <Image src={clock} fixToWidth imageText="iPhone alarm clock stand" />
     </LeftSection>
     <RightSection>
       <Header>
-        What is Fool on the Hill?
+        What are our products made from?
       </Header>
       <TextSection>
-        { lorum }
+        { description }
       </TextSection>
     </RightSection>
   </MainContainer>
